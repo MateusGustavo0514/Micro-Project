@@ -27,10 +27,8 @@ int main ()
                     printf("1.Academic & Educational\n");
                     printf("2.Literature & Fiction\n");
                     printf("3.Geek & Pop Culture\n");
-                    printf("4.Non-Fiction & Self-Development\n");
-                    printf("5.Children & Youth\n");
-                    printf("6.Society & Culture\n");
-                    printf("7.Back\nInsert Here:");
+                    printf("4.Society & Culture\n");
+                    printf("5.Back\nInsert Here:");
                     scanf("%d",&op_category);
 
                     switch (op_category) // swicth case to see the books of each category
@@ -42,7 +40,7 @@ int main ()
 
                             while (working_menu_academic)
                             {
-                                printf("\n<<< ACADEMIC BOOKS >>>\n");
+                                printf("\n<<< ACADEMIC & Educational BOOKS >>>\n");
                                 printf("1.Business Administration\n");
                                 printf("2.Computer Science\n");
                                 printf("3.Economics\n");
@@ -62,7 +60,7 @@ int main ()
                                         while(working_menu_Bbusinnes)
                                         {
                                             printf("\n<<< Business Administration >>>\n");
-                                            printf("We don't have business administration books yet... come back later");
+                                            printf("We don't have business administration books yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -86,7 +84,7 @@ int main ()
                                         while (working_menu_Bcomputerscience)
                                         {
                                             printf("\n<<< Computer Science  >>>\n");
-                                            printf("We don't have computer science books yet... come back later");
+                                            printf("We don't have computer science books yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -103,14 +101,14 @@ int main ()
                                         }
                                         break; 
                                     }
-                                    case 3: 
+                                    case 3: // Economic
                                     {
                                         int working_menu_Beconomic = 1;
 
                                         while(working_menu_Beconomic)
                                         {
                                             printf("\n<<< Economics >>>\n");
-                                            printf("We don't have business economic yet... come back later");
+                                            printf("We don't have business economic yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -127,14 +125,14 @@ int main ()
                                         }
                                         break; 
                                         }
-                                    case 4: 
+                                    case 4: // law
                                     {
                                         int working_menu_Blaw = 1;
 
                                         while(working_menu_Blaw)
                                         {
                                             printf("\n<<< Law >>>\n");
-                                            printf("We don't have business law yet... come back later");
+                                            printf("We don't have business law yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -151,14 +149,14 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 5:
+                                    case 5: // engineering
                                     {
                                         int working_menu_Bengineering = 1;
 
                                         while(working_menu_Bengineering)
                                         {
                                             printf("\n<<< Engineering >>>\n");
-                                            printf("We don't have business engineering yet... come back later");
+                                            printf("We don't have business engineering yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -175,14 +173,14 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 6:
+                                    case 6: // mathematics
                                     {
                                         int working_menu_Bmathematics = 1;
 
                                         while (working_menu_Bmathematics)
                                         {
                                             printf("\n<<< Mathematics >>>\n");
-                                            printf("We don't have business mathematics  yet... come back later");
+                                            printf("We don't have business mathematics  yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -199,14 +197,14 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 7:
+                                    case 7: // medicine
                                     {
                                         int working_menu_Bmedicine = 1;
 
                                         while(working_menu_Bmedicine)
                                         {
                                             printf("\n<<< Medice >>>\n");
-                                            printf("We don't have business medice yet... come back later");
+                                            printf("We don't have business medice yet... come back later\n");
                                             printf("1.back\nInsert Here:");
                                             scanf("%d", &op_academic);
 
@@ -223,7 +221,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 8:
+                                    case 8: // back
                                     {
                                         working_menu_academic = 0;
                                         break; 
@@ -233,26 +231,461 @@ int main ()
                                         break;
                                 }
                             }
+                            break;
                         } 
                         case 2: // Literature books
                         {
+                            int op_literature;
+                            int working_menu_literature = 1;
+
+                            while(working_menu_literature)
+                            {
+                                printf("\n<<< LITERATURE & FICTION BOOKS >>>\n");
+                                printf("1.Classics\n");
+                                printf("2.Drama\n");
+                                printf("3.Fantasy\n");
+                                printf("4.Poetry\n");
+                                printf("5.Romance\n");
+                                printf("6.Suspense\n");
+                                printf("7.Adventure\n");
+                                printf("8.Back\nInsert Here:");
+                                scanf("%d", &op_literature);  
+
+                                switch(op_literature)
+                                {
+                                    case 1:
+                                    {
+                                        int working_menu_Bclassic = 1;
+
+                                        while (working_menu_Bclassic)
+                                        {
+                                            printf("\n<<< Classics >>>\n");
+                                            printf("We don't have classic books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Bclassic = 1;
+                                                break;
+                                            default:
+                                                printf("Inserte a available option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;      
+                                    }
+                                    case 2:
+                                    {
+                                        int working_menu_Bdrama = 1;
+
+                                        while (working_menu_Bdrama)
+                                        {
+                                            printf("\n<<< Drama >>>\n");
+                                            printf("We don't have drama books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Bdrama = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;
+                                    }
+                                    case 3:
+                                    {
+                                        int working_menu_Bfantasy = 1;
+
+                                        while (working_menu_Bfantasy)
+                                        {
+                                            printf("\n<<< Fantasy >>>\n");
+                                            printf("We don't have fantasy books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Bfantasy = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;        
+                                    }
+                                    case 4:
+                                    {
+                                        int working_menu_Bpoetry = 1;
+
+                                        while (working_menu_Bpoetry)
+                                        {
+                                            printf("\n<<< Poetry >>>\n");
+                                            printf("We don't have poetry books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Bpoetry = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;    
+                                    }
+                                    case 5:
+                                    {
+                                        int working_menu_Bromance = 1;
+
+                                        while (working_menu_Bromance)
+                                        {
+                                            printf("\n<<< Romance >>>\n");
+                                            printf("We don't have romance books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Bromance = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;  
+                                    }
+                                    case 6:
+                                    {
+                                        int working_menu_Bsuspense = 1;
+
+                                        while (working_menu_Bsuspense )
+                                        {
+                                            printf("\n<<< Suspense >>>\n");
+                                            printf("We don't have suspense books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Bsuspense = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;  
+                                    }
+                                    case 7:
+                                    {
+                                        int working_menu_Badventure = 1;
+
+                                        while (working_menu_Badventure)
+                                        {
+                                            printf("\n<<< Adventures >>>\n");
+                                            printf("We don't have adventures books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_literature); 
+                                            
+                                            switch (op_literature)
+                                            {
+                                            case 1:
+                                                working_menu_Badventure = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;  
+                                    }
+                                    case 8:
+                                    {
+                                        working_menu_literature = 0;
+                                        break;
+                                    }
+                                    default:
+                                    {
+                                        printf("Insert a avalible option\n");
+                                        break;        
+                                    }
+                                }
+                            }
                             break;
                         }
                         case 3: // Pop Culture books 
                         {
+                            int op_geek;
+                            int working_menu_geek = 1;
+
+                            while(working_menu_geek)
+                            {
+                                printf("\n<<< GEEK & POP CULTURE BOOKS >>>\n");
+                                printf("1.Comics\n");
+                                printf("2.Science Fiction\n");
+                                printf("3.Manga\n");
+                                printf("4.Games\n");
+                                printf("5.Back\nInsert Here:");
+                                scanf("%d", &op_geek);
+                                
+                                switch(op_geek)
+                                {
+                                    case 1:
+                                    {
+                                        int working_menu_Bcomics = 1;
+
+                                        while (working_menu_Bcomics)
+                                        {
+                                            printf("\n<<< Comics >>>\n");
+                                            printf("We don't have comics books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_geek); 
+                                            
+                                            switch (op_geek)
+                                            {
+                                            case 1:
+                                                working_menu_Bcomics = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;          
+                                    }
+                                    case 2:
+                                    {
+                                        int working_menu_Bscience_fiction = 1;
+
+                                        while (working_menu_Bscience_fiction)
+                                        {
+                                            printf("\n<<< Science Fiction >>>\n");
+                                            printf("We don't have science fiction books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_geek);  
+                                            
+                                            switch (op_geek)
+                                            {
+                                            case 1:
+                                                working_menu_Bscience_fiction = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;          
+                                    }
+                                    case 3:
+                                    {
+                                        int working_menu_Bmanga = 1;
+
+                                        while (working_menu_Bmanga)
+                                        {
+                                            printf("\n<<< Manga >>>\n");
+                                            printf("We don't have manga books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_geek); 
+                                            
+                                            switch (op_geek)
+                                            {
+                                            case 1:
+                                                working_menu_Bmanga = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;             
+                                    }
+                                    case 4:
+                                    {
+                                        int working_menu_Bgames = 1;
+
+                                        while (working_menu_Bgames)
+                                        {
+                                            printf("\n<<< Manga >>>\n");
+                                            printf("We don't have manga books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_geek); 
+                                            
+                                            switch (op_geek)
+                                            {
+                                            case 1:
+                                                working_menu_Bgames = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;         
+                                    }
+                                    case 5: 
+                                    {
+                                        working_menu_geek = 0;
+                                        break;
+                                    }
+                                    default:
+                                    {
+                                        printf("Insert a avalible option\n");
+                                        break;           
+                                    }
+                                }
+                            }
                             break;
                         }
-                        case 4: // Non-Ficition books
+                        case 4: // Society & Culture
                         {
+                            int op_culture;
+                            int working_menu_culture = 1;
+                            
+                            while(working_menu_culture)
+                            {
+                                printf("\n<<< SOCIETY & Culture >>>\n");
+                                printf("1.History\n");
+                                printf("2.Philosophy\n");
+                                printf("3.Politics\n");
+                                printf("4.Sociology\n");
+                                printf("5.Back\nInsert Here:");
+                                scanf("%d", &op_culture);   
+                                
+                                switch(op_culture)
+                                {
+                                    case 1:
+                                    {
+                                        int working_menu_Bhistory = 1;
+
+                                        while(working_menu_Bhistory)
+                                        {
+                                            printf("\n<<< History >>>\n");
+                                            printf("We don't have History books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_culture);   
+                                            
+                                            switch (op_culture)
+                                            {
+                                            case 1:
+                                                working_menu_culture = 0;
+                                                break;
+                                        
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;
+                                    }
+                                    case 2:
+                                    {
+                                        int working_menu_Bphilosophy = 1;
+
+                                        while (working_menu_Bphilosophy)
+                                        {
+                                            printf("\n<<< Philosophy >>>\n");
+                                            printf("We don't have philosophy books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_culture); 
+                                            
+                                            switch (op_culture)
+                                            {
+                                            case 1:
+                                                working_menu_Bphilosophy = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;      
+                                    }
+                                    case 3:
+                                    {
+                                        int working_menu_Bpolitics = 1;
+
+                                        while (working_menu_Bpolitics)
+                                        {
+                                            printf("\n<<< Politics >>>\n");
+                                            printf("We don't have politics books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_culture); 
+                                            
+                                            switch (op_culture)
+                                            {
+                                            case 1:
+                                                working_menu_Bpolitics = 1;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;    
+                                    }
+                                    case 4: 
+                                    {
+                                        int working_menu_Bsociology = 1;
+
+                                        while (working_menu_Bsociology)
+                                        {
+                                            printf("\n<<< Sociology >>>\n");
+                                            printf("We don't have sociology books yet... come back later\n");
+                                            printf("1.back\nInsert Here:");
+                                            scanf("%d", &op_culture); 
+                                            
+                                            switch (op_culture)
+                                            {
+                                            case 1:
+                                                working_menu_Bsociology = 0;
+                                                break;
+                                            default:
+                                                printf("Insert a avalible option\n");
+                                                break;
+                                            }
+                                        }
+                                        break;         
+                                    }
+                                    case 5:
+                                    {
+                                        working_menu_culture = 0;
+                                        break;
+                                    }
+                                    default:
+                                    {
+                                        printf("Insert a avalible option\n");
+                                        break;          
+                                    } 
+                                }
+                            }
                             break;
                         } 
-                        case 5: // Children books 
+                        case 5:
                         {
+                            working_menu_category = 0;
                             break;
-                        } 
-                        case 6:  // Society & Culture books
+                        }
+                        default:
                         {
-                            break;
+                            printf("Insert a avalible option\n");
+                            break;           
                         }  
                     
                     }
@@ -264,6 +697,8 @@ int main ()
             }
             case 3: // exit
             {
+                printf("Exit...");
+                working_menu = 0;
                 break;
             } 
         }

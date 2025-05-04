@@ -125,7 +125,7 @@ int main ()
                                         }
                                         break; 
                                         }
-                                    case 4: // law
+                                    case 4: // Law
                                     {
                                         int working_menu_Blaw = 1;
 
@@ -149,7 +149,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 5: // engineering
+                                    case 5: // Engineering
                                     {
                                         int working_menu_Bengineering = 1;
 
@@ -173,7 +173,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 6: // mathematics
+                                    case 6: // Mathematics
                                     {
                                         int working_menu_Bmathematics = 1;
 
@@ -197,7 +197,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 7: // medicine
+                                    case 7: // Medicine
                                     {
                                         int working_menu_Bmedicine = 1;
 
@@ -221,7 +221,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 8: // back
+                                    case 8: // Back
                                     {
                                         working_menu_academic = 0;
                                         break; 
@@ -253,7 +253,7 @@ int main ()
 
                                 switch(op_literature)
                                 {
-                                    case 1:
+                                    case 1: // Classic
                                     {
                                         int working_menu_Bclassic = 1;
 
@@ -277,7 +277,7 @@ int main ()
                                         }
                                         break;      
                                     }
-                                    case 2:
+                                    case 2: // Drama
                                     {
                                         int working_menu_Bdrama = 1;
 
@@ -300,7 +300,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 3:
+                                    case 3: // Fantasy
                                     {
                                         int working_menu_Bfantasy = 1;
 
@@ -323,7 +323,7 @@ int main ()
                                         }
                                         break;        
                                     }
-                                    case 4:
+                                    case 4: // Poetry
                                     {
                                         int working_menu_Bpoetry = 1;
 
@@ -347,7 +347,7 @@ int main ()
                                         }
                                         break;    
                                     }
-                                    case 5:
+                                    case 5: // Romance
                                     {
                                         int working_menu_Bromance = 1;
 
@@ -370,7 +370,7 @@ int main ()
                                         }
                                         break;  
                                     }
-                                    case 6:
+                                    case 6: // Suspense
                                     {
                                         int working_menu_Bsuspense = 1;
 
@@ -393,7 +393,7 @@ int main ()
                                         }
                                         break;  
                                     }
-                                    case 7:
+                                    case 7: // Adventure
                                     {
                                         int working_menu_Badventure = 1;
 
@@ -416,7 +416,7 @@ int main ()
                                         }
                                         break;  
                                     }
-                                    case 8:
+                                    case 8: // Back
                                     {
                                         working_menu_literature = 0;
                                         break;
@@ -447,7 +447,7 @@ int main ()
                                 
                                 switch(op_geek)
                                 {
-                                    case 1:
+                                    case 1: // Comics
                                     {
                                         int working_menu_Bcomics = 1;
 
@@ -470,7 +470,7 @@ int main ()
                                         }
                                         break;          
                                     }
-                                    case 2:
+                                    case 2: // Science Fiction
                                     {
                                         int working_menu_Bscience_fiction = 1;
 
@@ -516,7 +516,7 @@ int main ()
                                         }
                                         break;             
                                     }
-                                    case 4:
+                                    case 4: // Games
                                     {
                                         int working_menu_Bgames = 1;
 
@@ -539,7 +539,7 @@ int main ()
                                         }
                                         break;         
                                     }
-                                    case 5: 
+                                    case 5: // Back
                                     {
                                         working_menu_geek = 0;
                                         break;
@@ -570,7 +570,7 @@ int main ()
                                 
                                 switch(op_culture)
                                 {
-                                    case 1:
+                                    case 1: // Culture
                                     {
                                         int working_menu_Bhistory = 1;
 
@@ -594,7 +594,7 @@ int main ()
                                         }
                                         break;
                                     }
-                                    case 2:
+                                    case 2: // Philosophy
                                     {
                                         int working_menu_Bphilosophy = 1;
 
@@ -617,7 +617,7 @@ int main ()
                                         }
                                         break;      
                                     }
-                                    case 3:
+                                    case 3: // Politics
                                     {
                                         int working_menu_Bpolitics = 1;
 
@@ -640,7 +640,7 @@ int main ()
                                         }
                                         break;    
                                     }
-                                    case 4: 
+                                    case 4: // Sociology
                                     {
                                         int working_menu_Bsociology = 1;
 
@@ -663,7 +663,7 @@ int main ()
                                         }
                                         break;         
                                     }
-                                    case 5:
+                                    case 5: // Back
                                     {
                                         working_menu_culture = 0;
                                         break;
@@ -677,7 +677,7 @@ int main ()
                             }
                             break;
                         } 
-                        case 5:
+                        case 5: // Back
                         {
                             working_menu_category = 0;
                             break;
